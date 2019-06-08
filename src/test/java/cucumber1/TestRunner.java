@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src\\test\\resources\\Features",tags={},dryRun=false,glue="cucumber1",
-plugin={"rerun:src\\main\\resources\\failed.txt","json:target"},monochrome=true)
+plugin={"rerun:src\\main\\resources\\failed.txt","json:target\\cucumber.json"},monochrome=true)
 public class TestRunner {
 
 	
